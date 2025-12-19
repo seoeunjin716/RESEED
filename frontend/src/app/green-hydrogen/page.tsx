@@ -7,7 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useHydrogenStore } from '@/store/hydrogenStore';
-import { Droplet, Zap, DollarSign, TrendingDown, Battery } from 'lucide-react';
+import { Droplet, Zap, DollarSign, TrendingDown } from 'lucide-react';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { mockWeeklyHydrogenProduction, hydrogenUseCases } from '@/lib/mockData/hydrogen';
 
@@ -27,7 +27,7 @@ export default function GreenHydrogenPage() {
 
   useEffect(() => {
     fetchHydrogenData();
-  }, []);
+  }, [fetchHydrogenData]);
 
   const handleCalculate = () => {
     calculateProduction();

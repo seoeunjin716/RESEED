@@ -3,8 +3,8 @@
 import { useEffect, useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useEnergyStore } from '@/store/energyStore';
-import { Wind, Sun, TrendingUp, AlertTriangle, Battery, Zap } from 'lucide-react';
-import { LineChart, Line, AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { Wind, Sun, AlertTriangle, Battery, Zap } from 'lucide-react';
+import { AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { mockWeeklyGeneration } from '@/lib/mockData/energy';
 
 export default function RenewableEnergyPage() {
@@ -13,7 +13,7 @@ export default function RenewableEnergyPage() {
 
   useEffect(() => {
     fetchEnergyData();
-  }, []);
+  }, [fetchEnergyData]);
 
   const surplusEnergy = Math.max(0, currentGeneration.total - demand);
 

@@ -1,8 +1,8 @@
 'use client';
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { MapPin, AlertTriangle, Satellite, CloudRain, TrendingUp } from 'lucide-react';
-import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, ScatterChart, Scatter } from 'recharts';
+import { MapPin, AlertTriangle, Satellite, CloudRain } from 'lucide-react';
+import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const mockRiskAreas = [
   { id: 1, name: '제주시 도심', riskLevel: 'high', rainfall: 350, slope: 5, population: 45000 },
