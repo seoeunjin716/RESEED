@@ -11,7 +11,7 @@ export default function DashboardPage() {
 
   useEffect(() => {
     fetchDashboardData();
-  }, []);
+  }, [fetchDashboardData]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-seed-50 via-white to-hydrogen-50">

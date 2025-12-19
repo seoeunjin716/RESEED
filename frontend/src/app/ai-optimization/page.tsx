@@ -2,8 +2,8 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Brain, TrendingUp, Calendar, Lightbulb, LineChart as LineChartIcon, Leaf } from 'lucide-react';
-import { AreaChart, Area, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar } from 'recharts';
+import { Brain, TrendingUp, Calendar, Lightbulb, Leaf } from 'lucide-react';
+import { AreaChart, Area, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar } from 'recharts';
 
 const mockOptimizationSchedule = [
   { time: '00:00', biochar: 30, hydrogen: 50, battery: 20, score: 75 },

@@ -8,8 +8,8 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Slider } from '@/components/ui/slider';
 import { useBiocharStore } from '@/store/biocharStore';
-import { Leaf, Factory, TrendingUp, Droplets, Sprout } from 'lucide-react';
-import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
+import { Leaf, Factory, TrendingUp, Sprout } from 'lucide-react';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import { mockWeeklyBiocharProduction } from '@/lib/mockData/biochar';
 
 const COLORS = ['#22c55e', '#86efac', '#4ade80', '#16a34a', '#15803d'];
@@ -31,7 +31,7 @@ export default function BiocharPage() {
 
   useEffect(() => {
     fetchBiocharData();
-  }, []);
+  }, [fetchBiocharData]);
 
   const handleCalculate = () => {
     calculateProduction();

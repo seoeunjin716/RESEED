@@ -2,7 +2,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { MapPin, AlertTriangle, Satellite, CloudRain } from 'lucide-react';
-import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Cell } from 'recharts';
 
 const mockRiskAreas = [
   { id: 1, name: '제주시 도심', riskLevel: 'high', rainfall: 350, slope: 5, population: 45000 },
@@ -203,10 +203,10 @@ export default function FloodRiskPage() {
                   <XAxis dataKey="facility" />
                   <YAxis label={{ value: '위험도 점수', angle: -90, position: 'insideLeft' }} />
                   <Tooltip />
-                  <Bar dataKey="risk" fill="#ef4444">
+                  <Bar dataKey="risk">
                     {facilityRisks.map((entry, index) => (
-                      <Bar
-                        key={`bar-${index}`}
+                      <Cell
+                        key={`cell-${index}`}
                         fill={entry.risk > 60 ? '#ef4444' : entry.risk > 40 ? '#f59e0b' : '#22c55e'}
                       />
                     ))}

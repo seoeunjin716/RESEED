@@ -1,11 +1,7 @@
 'use client';
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Sprout, Target, Lightbulb, Users, Code, Database, Cloud, Cpu } from 'lucide-react';
-
-const teamMembers = [
-  { name: 'ESGseed Team', role: '프로젝트 총괄', specialty: '탄소중립 솔루션' },
-];
+import { Sprout, Target, Lightbulb, Users, Code, Database, Cloud } from 'lucide-react';
 
 const techStack = [
   { category: 'Frontend', items: ['Next.js 14', 'React', 'TypeScript', 'Tailwind CSS', 'Zustand', 'Recharts'] },
